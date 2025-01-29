@@ -1,0 +1,35 @@
+.header{
+    background-color:white;
+    color:black;
+}
+.header{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+ padding-top: 10px;
+ padding-bottom: 20px;
+
+    }
+.menu_link{
+text-decoration: none;
+display: block;
+ padding: 10px;
+ margin: 10px;
+ background-color: rgb(255, 0, 0);
+ color: rgb(255, 255, 255);
+ list-style-type: none;
+}
+.menu {
+    text-decoration: none;
+    margin: 0;
+    padding: 0px 20px 19;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+.sale {
+    text-decoration: none;  
+}  
