@@ -1,45 +1,100 @@
-.main{
-    background-color:white;
-    color:black; 
-}
-.searh{
+/* Главный контейнер: акции + поиск + видео */
+.maincontainer {
     display: flex;
-    align-items: left;
     justify-content: space-between;
-}
-.searh__title{
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-}
-.main__container {
-    margin: 10;
-    padding: 20px 0;
-    display: flex;
+    align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap;
-    list-style-type: none;
-   }
-   .review1{
-    width: 700px;
+}
+
+/* Блок акций (слева) */
+.sale {
+    flex: 1;
+    max-width: 70%;
+}
+
+.saletitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.saleimage img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Правая часть (поиск + видео) */
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Поиск */
+.searh form {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+}
+
+.searh input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searh button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.searh button:hover {
+    background-color: #0056b3;
+}
+
+/* Видео обзоры */
+.video {
+    padding: 10px;
+}
+
+.video h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video img {
+    width: 100%;
+    max-width: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Отзывы */
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.review1, .review2 {
+    flex: 1;
     padding: 15px;
     background-color: rgb(65, 160, 243);
-   color: black;
+    color: black;
     box-shadow: 1px 2px 20px 5px #d7d7d7;
-   }
-   .review2{
-    width: 600px;
-    padding: 15px;
-    background-color: rgb(65, 160, 243);
-   color: black;
-    box-shadow: 1px 2px 20px 5px #d7d7d7;
-   }
-   .reviews{
-    margin: 0;
-    padding: 20px 0;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    list-style-type: none;
-   }
-  
+    border-radius: 5px;
+    text-align: center;
+}
+
+.review1 img, .review2 img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
