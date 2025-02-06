@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет-магазин</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -23,11 +23,21 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
-
+    <main class="register-container">
+        <div class="register-box">
+            <img src="img/logo1.png" alt="Логотип" class="register-logo">
+            <form action="dashboard.html" method="POST">
+                <input type="text" placeholder="Имя" required>
+                <input type="text" placeholder="Фамилия" required>
+                <input type="tel" placeholder="Номер телефона" required>
+                <button type="submit" class="register-button">Зарегистрироваться</button>
+            </form>
+            <button class="social-login">Регистрация через VK</button>
+            <button class="social-login">Регистрация через почту</button>
+            <button class="social-login">Регистрация через TG</button>
+            <a href="profile.html" class="register-link">Уже есть аккаунт</a>
+        </div>
     </main>
-
 
     <footer class="footer">
         <div class="footer-container">
@@ -64,4 +74,4 @@
         </div>
     </footer>
 </body>
-</html>    
+</html>

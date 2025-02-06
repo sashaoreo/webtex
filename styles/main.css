@@ -1,100 +1,383 @@
-/* Главный контейнер: акции + поиск + видео */
-.maincontainer {
+.main-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
     gap: 20px;
 }
 
 /* Блок акций (слева) */
 .sale {
-    flex: 1;
-    max-width: 70%;
+    width: 40%;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.saletitle {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.sale h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .saleimage img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-/* Правая часть (поиск + видео) */
-.left {
-    flex: 2;
+/* Правая колонка (поиск и видео) */
+.right-section {
+    width: 65%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 /* Поиск */
-.searh form {
+.search-container {
     display: flex;
-    width: 100%;
-    max-width: 600px;
-}
-
-.searh input {
-    flex: 1;
+    align-items: center;
+    background: #f5f5f5;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-.searh button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
+.search-container input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin: 0px;
+}
+
+.search-container button {
+    background: none;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-}
-
-.searh button:hover {
-    background-color: #0056b3;
+    width: 10%;
 }
 
 /* Видео обзоры */
-.video {
-    padding: 10px;
+.video-container {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.video h1 {
-    font-size: 24px;
-    font-weight: bold;
+.video-container h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.video-title {
+    margin: 5px;
+}
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
     margin-bottom: 10px;
 }
 
-.video img {
-    width: 100%;
-    max-width: 250px;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-/* Отзывы */
-.reviews {
+/* Видео блок */
+.video-block {
+    width: 75%;
+    
+    background: #ddd;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 8px;
 }
 
-.review1, .review2 {
-    flex: 1;
-    padding: 15px;
-    background-color: rgb(65, 160, 243);
-    color: black;
-    box-shadow: 1px 2px 20px 5px #d7d7d7;
+/* Карточка товара (плейсхолдер) */
+.product-card-placeholder {
+    width: 35%;
+    height: 250px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* Контейнер отзывов с горизонтальной прокруткой */
+.reviews-container {
+    display: flex;
+    align-items: stretch; /* Растягиваем все отзывы на одинаковую высоту */
+    overflow-x: auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Карточка отзыва */
+.review {
+    display: flex;
+    flex-direction: row; /* Чтобы текст растягивал контейнер */
+    justify-content: space-between; /* Выравниваем содержимое */
+    flex: 0 0 1000px; /* Фиксированная ширина */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
 }
 
-.review1 img, .review2 img {
-    max-width: 100px;
+/* Контейнер с текстом */
+.review-content {
+    flex: 1; /* Заполняем всё доступное пространство */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем текст */
+    min-height: 200px; /* Минимальная высота, чтобы карточки не сжимались слишком сильно */
+}
+
+/* Текст отзыва */
+.review-text {
+    font-size: 16px;
+    font-style: italic;
+    margin: 10px 20px 5px;
+}
+/* Карточка товара */
+.product-card1 {
+    width: 200px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.review-author,
+.review-date {
+    font-size: 14px;
+    color: #666;
+    margin: 3px;
+}
+
+
+/* Стилизация полосы прокрутки */
+.reviews-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/* Карточка товара */
+.product-card {
+    width: 180px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Изображение товара */
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Название модели */
+.product-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0 5px;
+}
+
+/* Описание */
+.product-description {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Цена */
+.product-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #d9534f;
     margin-bottom: 10px;
+}
+
+/* Кнопка "Купить" (ссылка) */
+.buy-button {
+    display: block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.buy-button:hover {
+    background: #ff0000;
+}
+
+/* Контейнер входа и регистрации */
+.login-container, .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.login-box, .register-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.login-logo, .register-logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-login {
+    background-color: #444;
+    margin-top: 5px;
+}
+
+.social-login:hover {
+    background-color: #333;
+}
+
+.register-link {
+    display: block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для страницы товара */
+.product-page {
+    padding: 40px 0;
+}
+
+.product {
+    display: flex;
+    align-items: flex-start; /* Выравниваем все элементы по верхнему краю */
+    gap: 20px; /* Отступ между картинкой и текстом */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Фото товара */
+.product-image img {
+    flex-shrink: 0; /* Запрещает уменьшение картинки */
+    max-width: 500px;
+    
+}
+
+/* Информация о товаре */
+.product-info {
+    max-width: 600px;
+}
+
+.product-title1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-specs {
+    list-style: none;
+    padding: 0;
+}
+
+.product-specs li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Кнопка добавления в корзину */
+.add-to-cart {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
 }

@@ -1,69 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Интернет-магазин</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-   <header class="header container">
-    <a class="header__logo" href="index.html"><img class="header__logo" src="img/logo1.png." alt="" width="300"></a>  
-       <nav class="header__menu">
-        <ul class="menu"> 
-        <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
-       <li class="menu__item"><a class="menu__link" href="#"><img src="img/telephone_rw7g29ckvwd9.svg" alt="" width="48"></a></li>
-       <li class="menu__item"><a class="menu__link" href="corzina.html"><img src="img/shopping_basket_x2ekj97jfwrh.svg" alt="" width="48"></a></li>
-       <li class="menu__item"><a class="menu__link" href="profile.html"><img src="img/man_u88m72bokl5l.svg" alt="" width="48"></a></li>
-    </ul>
-</nav>
+
+    <!-- Шапка сайта -->
+    <header class="header container">
+        <a class="headerlogo" href="index.html">
+            <img class="headerlogo" src="img/logo1.png" alt="Логотип" width="200">
+        </a>  
+        <nav class="headermenu">
+            <ul class="menu"> 
+                <li class="menuitem"><a class="menulink" href="catalog.html">КАТАЛОГ</a></li>
+                <li class="menuitem"><a class="menulink" href="#"><img src="img/telephone_rw7g29ckvwd9.svg" alt="Телефон" width="40"></a></li>
+                <li class="menuitem"><a class="menulink" href="corzina.html"><img src="img/shopping_basket_x2ekj97jfwrh.svg" alt="Корзина" width="40"></a></li>
+                <li class="menuitem"><a class="menulink" href="profile.html"><img src="img/man_u88m72bokl5l.svg" alt="Профиль" width="40"></a></li>
+            </ul>
+        </nav>
     </header>
-   <main>
-        <section class="sale"> 
-            <div class="sale">
-                <h1 class="sale__title">АКЦИИ</h1>
-                <div class="sale__image">
-                <img src="img/sale1.png" alt="" width="400">
+
+    <!-- Основной контент -->
+    <main class="main-container">
+        
+        <!-- Блок акций (слева) -->
+        <section class="sale">
+            <div class="saleimage">
+                <img src="img/sale1.png" alt="Акция" width="100%">
             </div>
         </section>
-        <section>
-            <div class="searh">
-                <h1 class="searh__title">ПОИСК</h1>
-                <form action="/" alt="" width="600">
-                    <input type="search" name="поиск IPhone" placeholder="поиск IPhone"> 
-                    <button>найти</button>
-                    </form>
+
+        <!-- Правая колонка (поиск и видео) -->
+        <div class="right-section">
+            
+            <!-- Поиск -->
+            <div class="search-container">
+                <input type="search" name="search" placeholder="Поиск товаров...">
+                <button type="submit"><img src="img/free-icon-magnifier-2311526.png" alt="Поиск" width="40"></button>
             </div>
-            <div class="video">
-                <h1>видео обзоры смартфонов</h1>
-                <img src="img/obzor15pro.png" alt="" width="250"><img src="img/ip16pro.png" alt="" width="200">
-                <img src="img/obzor15green.png" alt="" width="250"><img src="img/ip15green.png" alt="" width="110"> 
+
+            <!-- Видео обзоры -->
+            <section class="video-container">
+                <h1 class="video-title">Видео обзоры смартфонов:</h1>
+                <div class="video-row">
+                    <div class="video-block"><img src="img/obzor16pro.png"></div>
+                    <div class="product-card">
+                        <img src="img/ip16pro.png" alt="iPhone 15 Pro" class="product-image">
+                        <h3 class="product-title">iPhone 16 Pro, 256 ГБ</h3>
+                        
+                        <a href="phone1.html" class="buy-button" target="_blank">Купить</a>
+                    </div>
+                </div>
+                <div class="video-row">
+                    <div class="video-block"><img src="img/obzor15green.png"></div>
+                    <div class="product-card">
+                        <img src="img/ip15green.png" alt="iPhone 15 Pro" class="product-image">
+                        <h3 class="product-title">iPhone 15, 128 ГБ </h3>
+                        
+                        <a href="phone1.html" class="buy-button" target="_blank">Купить</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        
+    </main>
+
+    <!-- Блок отзывов -->
+     
+        <h2 class="review-title">Отзывы наших покупателей:</h2>
+    <main class="main-container">    
+        <section class="reviews-container">
+        <div class="review">
+            <div class="review-content">
+                <p class="review-text">"Достоинства: Дешево, оригинал, быстрая доставка
+                    <br>Недостатки: Быстро садится
+                    <br>Комментарий: Телефон отличный, все огонь, не первый мой айфон, цена удивила 85 тысяч, оригинал, дата покупки и первого использования в настройках была моя, все коды/номера проверяются. единственное, что зарядка быстро садится, хоть и аккумулятора 100%, за пол года использования ни разу не тупил, не нагревалься, по сравнению с 14 камера практически ничем не отличается."
+                <p class="review-author">Автор: Иван Петров</p>
+                <p class="review-date">Дата: 05.02.2025</p>
+            </div>
+            <div class="product-card1">
+                <img src="img/ip16pro.png" alt="iPhone 15 Pro" sizes="2000" class="product-image">
+                <h3 class="product-title">iPhone 16 Pro, 256 ГБ</h3>
+                
+                <a href="phone1.html" class="buy-button" target="_blank">Купить</a>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <p class="review-text">"Достоинства: По соотношению цена качество это кажется лучшим выбором телефона, если хочется устройство на многие годы. Этого размера памяти вполне достаточно, большие объемы стоят заметно больше.
+                    <br>Недостатки: Не выявлено, все функции выполняет как заявлено. Батарея средненькая правда.
+                    <br>Комментарий: В целом из всех смартфонов этот кажется лучшим выбором, удобно лежит в руке, не тормозит, хорошо фотографирует и прочее. Вообщем хороший инструмент за свои деньги. Спасибо огромное магазину YOPHONE!"
+                <p class="review-author">Автор: Ольга Смирнова</p>
+                <p class="review-date">Дата: 02.02.2025</p>
+            </div>
+            <div class="product-card1">
+                <img src="img/ip15green.png" alt="iPhone 15 Pro" class="product-image">
+                <h3 class="product-title">iPhone 15, 128 ГБ </h3>
+                
+                <a href="phone1.html" class="buy-button" target="_blank">Купить</a>
+                </div>
             </div>
         </section>
-        <section class="reviews"> 
-            <h1 class="reviews__title">отзывы</h1>
-            <section class="reviews"> 
-            <div class="review1">
-                <img src="img/ip15problack.png" alt="" width="100">
-                <h3>Смартфон от Apple мы покупаем не потому, что у нас нет телефона, а потому что хочется😊 Apple iPhone 15 PRO-подробно рассказываю достоинства и недостатки данной модели и стоит ли переходить на неё, если у вас есть линейка Pro более ранней версии💫</h3>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Контактные данные и адрес -->
+            <div class="footer-contact">
+                <h3>Контакты</h3>
+                <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                <p>Email: <a href="yophone@mail.com">yophone@mail.com</a></p>
+                <p>Адрес: г. Йошкар-Ола, ул. Примерная, д. 10</p>
             </div>
-            <div class="review2">
-                <img src="img/ip15green.png" alt="" width="100">
-                <h3>Перешла с iPhone📱 13 на iPhone📱 15 не по своей воле, но по своему желанию. Стоит ли менять шило на мыло? Небольшое сравнение двух моделей телефона. Фото упаковки, телефона, место покупки, цена, характеристики + фотографии, сделанные на Apple iPhone 15.</h3>
+    
+            <!-- Социальные сети -->
+            <div class="footer-social">
+                <h3>Мы в соцсетях</h3>
+                <ul class="social-list">
+                    <li><a href="#"><img src="img/vk.svg" alt="VK"></a></li>
+                    <li><a href="#"><img src="img/telega_.svg" alt="Telegram"></a></li>
+                </ul>
             </div>
-        </section>
-   </main>
-   <footer>
-    <section class="footer">
-    <p>Орехов Александр СТ-22</p>
-    <ul class="footer__menu">
-        <li><a href="#">Правовая оговорка</a></li>
-        <li><a href="#">Пользовательское соглашение</a></li>
-        <li><a href="#">Политика конфиденциальности</a></li>
-    </ul>
-</section>
-</footer>
+    
+            <!-- Юридическая информация -->
+            <div class="footer-legal">
+                <h3>Правовая информация</h3>
+                <ul>
+                    <li><a href="#">Правовая оговорка</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Все права защищены | ИП Орехов Александр СТ-22</p>
+        </div>
+    </footer>
 
 </body>
 </html>
