@@ -10,44 +10,38 @@
 <body>
 
     <!-- Шапка сайта -->
-    <header class="header container">
-        <a class="headerlogo" href="index.html">
-            <img class="headerlogo" src="img/logo1.png" alt="Логотип" width="200">
+    <header class="header__container">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo" src="img/logo1.png" alt="Логотип" width="200">
         </a>  
-        <nav class="headermenu">
+        <nav class="header__menu">
             <ul class="menu"> 
-                <li class="menuitem"><a class="menulink" href="catalog.html">КАТАЛОГ</a></li>
-                <li class="menuitem"><a class="menulink" href="#"><img src="img/telephone_rw7g29ckvwd9.svg" alt="Телефон" width="40"></a></li>
-                <li class="menuitem"><a class="menulink" href="corzina.html"><img src="img/shopping_basket_x2ekj97jfwrh.svg" alt="Корзина" width="40"></a></li>
-                <li class="menuitem"><a class="menulink" href="profile.html"><img src="img/man_u88m72bokl5l.svg" alt="Профиль" width="40"></a></li>
+                <li class="menu__item"><a class="menu__link" href="catalog.html">КАТАЛОГ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#"><img src="img/telephone_rw7g29ckvwd9.svg" alt="Телефон" width="40"></a></li>
+                <li class="menu__item"><a class="menu__link" href="corzina.html"><img src="img/shopping_basket_x2ekj97jfwrh.svg" alt="Корзина" width="40"></a></li>
+                <li class="menu__item"><a class="menu__link" href="profile.html"><img src="img/man_u88m72bokl5l.svg" alt="Профиль" width="40"></a></li>
             </ul>
         </nav>
     </header>
     <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Смартфон - Название модели</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+
+
     <!-- Основной контент -->
-    <main class="product-page">
+    <main class="product__page">
         <div class="container">
             <div class="product">
                 <!-- Изображение смартфона -->
-                <div class="product-image">
+                <div class="product__image">
                     <img src="img/ip16pro.png" alt="Смартфон Название модели">
                 </div>
 
                 <!-- Информация о товаре -->
-                <div class="product-info">
-                    <h1 class="product-title1">iPhone 16 Pro, 256 ГБ</h1>
-                    <p class="product-price">Цена: <span>109 990 ₽</span></p>
+                <div class="product__info">
+                    <h1 class="product__title1">iPhone 16 Pro, 256 ГБ</h1>
+                    <p class="product__price">Цена: <span>109 990 ₽</span></p>
                     
                     <h3>Характеристики:</h3>
-                    <ul class="product-specs">
+                    <ul class="product__specs">
                         <li>Экран: 6.3" AMOLED, 120 Гц</li>
                         <li>Процессор: Apple A18 Pro</li>
                         <li>ОЗУ: 8 ГБ</li>
@@ -57,14 +51,14 @@
                     </ul>
 
                     <h3>Описание:</h3>
-                    <p class="product-description">
+                    <p class="product__description">
                         iPhone 16 Pro создан вместе с Apple Intelligence, персональной интеллектуальной системой, которая помогает вам писать, выражать себя и выполнять задачи без усилий. Благодаря новаторской защите конфиденциальности вы можете быть уверены, что никто другой не сможет получить доступ к вашим данным — даже Apple. Apple Intelligence разработан для защиты вашей конфиденциальности на каждом этапе . Он интегрирован в ядро ​​iPhone посредством обработки на устройстве. Поэтому он знает о вашей личной информации, не собирая ее.
 iPhone 16 Pro имеет титановый корпус Grade 5 с изысканной микроструйной отделкой. Титан имеет одно из самых высоких соотношений прочности к весу среди всех металлов, что делает эту модель невероятно прочной и впечатляюще легкой.
 Теперь вы можете сделать идеальное фото или видео в рекордно короткие сроки. Управление камерой дает вам более простой способ быстрого доступа к инструментам камеры . Просто проведите пальцем, чтобы настроить функции камеры, такие как экспозиция или глубина резкости, и переключайтесь между каждым объективом или используйте цифровой зум, чтобы скомпоновать кадр — так, как вам нравится.
 Феноменально мощный чип A18 Pro позволяет Apple Intelligence с более быстрым Neural Engine, улучшенным CPU и GPU, а также большим скачком в пропускной способности памяти. Он также управляет расширенными функциями видео и фото, такими как Camera Control, и обеспечивает лучшую графическую производительность для игр AAA.
                     </p>
 
-                    <button class="add-to-cart">Добавить в корзину</button>
+                    <button class="add__to__cart">Добавить в корзину</button>
                 </div>
             </div>
         </div>
@@ -72,9 +66,9 @@ iPhone 16 Pro имеет титановый корпус Grade 5 с изыска
 
     <!-- Подвал сайта -->
     <footer class="footer">
-        <div class="footer-container">
+        <div class="footer__container">
             <!-- Контактные данные и адрес -->
-            <div class="footer-contact">
+            <div class="footer__contact">
                 <h3>Контакты</h3>
                 <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
                 <p>Email: <a href="yophone@mail.com">yophone@mail.com</a></p>
@@ -82,16 +76,16 @@ iPhone 16 Pro имеет титановый корпус Grade 5 с изыска
             </div>
     
             <!-- Социальные сети -->
-            <div class="footer-social">
+            <div class="footer__social">
                 <h3>Мы в соцсетях</h3>
-                <ul class="social-list">
+                <ul class="social__list">
                     <li><a href="#"><img src="img/vk.svg" alt="VK"></a></li>
                     <li><a href="#"><img src="img/telega_.svg" alt="Telegram"></a></li>
                 </ul>
             </div>
     
             <!-- Юридическая информация -->
-            <div class="footer-legal">
+            <div class="footer__legal">
                 <h3>Правовая информация</h3>
                 <ul>
                     <li><a href="#">Правовая оговорка</a></li>
@@ -101,9 +95,10 @@ iPhone 16 Pro имеет титановый корпус Grade 5 с изыска
             </div>
         </div>
         
-        <div class="footer-bottom">
+        <div class="footer__bottom">
             <p>© 2025 Все права защищены | ИП Орехов Александр СТ-22</p>
         </div>
     </footer>
+
 </body>
 </html>

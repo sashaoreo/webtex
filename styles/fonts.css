@@ -1,20 +1,20 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url("/fonts/Comfortaa-Regular.woff");
+    src: url("../fonts/Comfortaa-Regular.woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
     }
     @font-face {
     font-family: "Tektur Medium";
-    src: url("/fonts/Tektur-Medium.woff");
+    src: url("../fonts/Tektur-Medium.woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
     }
     @font-face {
     font-family: "Tektur";
-    src: url("/fonts/Tektur-Regular.woff");
+    src: url("../fonts/Tektur-Regular.woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;

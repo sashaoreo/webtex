@@ -7,7 +7,7 @@
 }
 
 /* Основной контейнер подвала */
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -17,9 +17,9 @@
 }
 
 /* Контейнеры секций */
-.footer-contact,
-.footer-social,
-.footer-legal {
+.footer__contact,
+.footer__social,
+.footer__legal {
     flex: 1;
     min-width: 250px;
 }
@@ -31,58 +31,58 @@
 }
 
 /* Контактные данные */
-.footer-contact p {
+.footer__contact p {
     margin: 5px 0;
 }
 
-.footer-contact a {
+.footer__contact a {
     color: #007bff;
     text-decoration: none;
 }
 
-.footer-contact a:hover {
+.footer__contact a:hover {
     text-decoration: underline;
 }
 
 /* Социальные сети */
-.social-list {
+.social__list {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 15px;
 }
 
-.social-list li a img {
+.social__list li a img {
     width: 32px;
     height: 32px;
     transition: transform 0.3s;
 }
 
-.social-list li a img:hover {
+.social__list li a img:hover {
     transform: scale(1.1);
 }
 
 /* Юридическая информация */
-.footer-legal ul {
+.footer__legal ul {
     list-style: none;
     padding: 0;
 }
 
-.footer-legal ul li {
+.footer__legal ul li {
     margin-bottom: 5px;
 }
 
-.footer-legal ul li a {
+.footer__legal ul li a {
     color: #007bff;
     text-decoration: none;
 }
 
-.footer-legal ul li a:hover {
+.footer__legal ul li a:hover {
     text-decoration: underline;
 }
 
 /* Нижняя часть подвала */
-.footer-bottom {
+.footer__bottom {
     text-align: center;
     margin-top: 20px;
     padding-top: 15px;
