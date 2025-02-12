@@ -1,4 +1,4 @@
-.main__container {
+.main {
     width: 100%;
     max-width: 1200px;
     margin: 0px auto;
@@ -63,13 +63,13 @@
 }
 
 /* Видео обзоры */
-.video__container {
+.video {
     background: #f5f5f5;
     padding: 15px;
     border-radius: 10px;
 }
 
-.video__container h1 {
+.video h1 {
     font-size: 22px;
     margin-bottom: 5px;
 }
@@ -109,7 +109,7 @@
 }
 
 /* Контейнер отзывов с горизонтальной прокруткой */
-.reviews__container {
+.review__container {
     display: flex;
     align-items: stretch; /* Растягиваем все отзывы на одинаковую высоту */
     overflow-x: auto;
@@ -178,22 +178,22 @@
 
 
 /* Стилизация полосы прокрутки */
-.reviews__container::-webkit-scrollbar {
+.review__container::-webkit-scrollbar {
     height: 8px;
 }
 
-.reviews__container::-webkit-scrollbar-thumb {
+.review__container::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 4px;
 }
 
-.reviews__container::-webkit-scrollbar-thumb:hover {
+.review__container::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
 
 /* Карточка товара */
-.product__card {
+.product {
     width: 180px;
     background: white;
     border-radius: 10px;
@@ -321,7 +321,7 @@ button:hover {
     padding: 40px 0;
 }
 
-.product {
+.product1 {
     display: flex;
     align-items: flex-start; /* Выравниваем все элементы по верхнему краю */
     gap: 20px; /* Отступ между картинкой и текстом */
