@@ -17,9 +17,9 @@
         <nav class="header__menu">
             <ul class="menu"> 
                 <li class="menu__item"><a class="menu__link" href="catalog.html">КАТАЛОГ</a></li>
-                <li class="menu__item"><a class="menu__link" href="#"><img src="img/telephone_rw7g29ckvwd9.svg" alt="Телефон" width="40"></a></li>
-                <li class="menu__item"><a class="menu__link" href="corzina.html"><img src="img/shopping_basket_x2ekj97jfwrh.svg" alt="Корзина" width="40"></a></li>
-                <li class="menu__item"><a class="menu__link" href="profile.html"><img src="img/man_u88m72bokl5l.svg" alt="Профиль" width="40"></a></li>
+                <li class="menu__item"><a class="menu__link" href="#"><img class="menu__img" src="img/telephone_rw7g29ckvwd9.svg" alt="Телефон" width="40"></a></li>
+                <li class="menu__item"><a class="menu__link" href="corzina.html"><img class="menu__img" src="img/shopping_basket_x2ekj97jfwrh.svg" alt="Корзина" width="40"></a></li>
+                <li class="menu__item"><a class="menu__link" href="profile.html"><img class="menu__img" src="img/man_u88m72bokl5l.svg" alt="Профиль" width="40"></a></li>
             </ul>
         </nav>
     </header>
@@ -31,12 +31,12 @@
         <!-- Блок акций (слева) -->
         <section class="sale">
             <div class="sale__image">
-                <img src="img/sale1.png" alt="Акция">
+                <img class="sale__img" src="img/sale1.png" alt="Акция">
             </div>
         </section>
 
         <!-- Правая колонка (поиск и видео) -->
-        <div class="right__section">
+        <div class="search">
 
             <!-- Поиск -->
             <div class="search__container">
@@ -48,11 +48,13 @@
             <section class="video">
                 <h1 class="video__title">Видео обзоры смартфонов:</h1>
                 <div class="video__row">
-                    <div class="video__block"><img src="img/obzor16pro.png" alt="iPhone 16 Pro"></div>
+                    <div class="video__block"><a href="http://ya.ru" target="_blank" rel="noopener noreferrer">
+                        <img src="img/obzor16pro.png" alt="iPhone 16 Pro"></a>
+                    </div>
                     <div class="product">
                         <img src="img/ip16pro.png" alt="iPhone 16 Pro" class="product__image">
                         <h3 class="product__title">iPhone 16 Pro, 256 ГБ</h3>
-                        <a href="phone1.html" class="buy__button" target="_blank">Купить</a>
+                        <a href="phone1.html" class="product__botton" target="_blank">Купить</a>
                     </div>
                 </div>
                 <div class="video__row">
@@ -60,7 +62,7 @@
                     <div class="product">
                         <img src="img/ip15green.png" alt="iPhone 15 Pro" class="product__image">
                         <h3 class="product__title">iPhone 15, 128 ГБ </h3>
-                        <a href="phone1.html" class="buy__button" target="_blank">Купить</a>
+                        <a href="phone1.html" class="product__botton" target="_blank">Купить</a>
                     </div>
                 </div>
             </section>
@@ -68,9 +70,10 @@
         </div>
     </div>
 
+<section class="section">
     <!-- Блок отзывов -->
-    <h2 class="review__title">Отзывы наших покупателей:</h2>
-    <section class="review__container">
+    <h2 class="section__title">Отзывы наших покупателей:</h2>
+    <div class="review-wrap">
         <div class="review">
             <div class="review__content">
                 <p class="review__text">"Достоинства: Дешево, оригинал, быстрая доставка
@@ -80,10 +83,10 @@
                 <p class="review__author">Автор: Иван Петров</p>
                 <p class="review__date">Дата: 05.02.2025</p>
             </div>
-            <div class="product__card1">
-                <img src="img/ip16pro.png" alt="iPhone 16 Pro" class="product__image">
-                <h3 class="product__title">iPhone 16 Pro, 256 ГБ</h3>
-                <a href="phone1.html" class="buy__button" target="_blank">Купить</a>
+            <div class="product-card">
+                <img src="img/ip16pro.png" alt="iPhone 16 Pro" class="product-card__image">
+                <h3 class="product-card__title">iPhone 16 Pro, 256 ГБ</h3>
+                <a href="phone1.html" class="product-card__botton" target="_blank">Купить</a>
             </div>
         </div>
 
@@ -96,13 +99,14 @@
                 <p class="review__author">Автор: Ольга Смирнова</p>
                 <p class="review__date">Дата: 02.02.2025</p>
             </div>
-            <div class="product__card1">
-                <img src="img/ip15green.png" alt="iPhone 15 Pro" class="product__image">
-                <h3 class="product__title">iPhone 15, 128 ГБ</h3>
-                <a href="phone1.html" class="buy__button" target="_blank">Купить</a>
+            <div class="product-card">
+                <img src="img/ip15green.png" alt="iPhone 15 Pro" class="product-card__image">
+                <h3 class="product-card__title">iPhone 15, 128 ГБ</h3>
+                <a href="phone1.html" class="product-card__botton" target="_blank">Купить</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 </main>
     
@@ -117,9 +121,9 @@
             </div>
     
             <!-- Социальные сети -->
-            <div class="footer__social">
+            <div class="footer-social">
                 <h3>Мы в соцсетях</h3>
-                <ul class="social__list">
+                <ul class="footer-social__list">
                     <li><a href="#"><img src="img/vk.svg" alt="VK"></a></li>
                     <li><a href="#"><img src="img/telega_.svg" alt="Telegram"></a></li>
                 </ul>

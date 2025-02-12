@@ -8,6 +8,10 @@
     border-radius: 10px;
     max-width: 1200px;
     margin: 0px auto;
+    position: relative;
+    top: -100px;
+
+    animation: show-header 0.8s ease-out forwards;
 }
 
 

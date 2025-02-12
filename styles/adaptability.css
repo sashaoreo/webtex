@@ -1,0 +1,90 @@
+
+
+/* --- АДАПТИВ ДЛЯ ПЛАНШЕТОВ (768px) --- */
+@media (max-width: 768px) {
+    
+    /* Основной контейнер */
+    .main__container {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /* Основной контент */
+    .main__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Блок акций (становится на всю ширину) */
+    .sale {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Правая колонка (поиск и видео) */
+    .right__section {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Поиск */
+    .search__container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search__container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search__сontainer button {
+        width: 100%;
+    }
+
+    /* Видео обзоры (размещаем карточку под видео) */
+    .video__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .product{
+        width: 100%;
+    }
+
+    /* Контейнер отзывов: один отзыв в ряд */
+    .review-wrap {
+        flex-direction: column;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .review {
+        width: 100%;
+    }
+
+    /* Карточка товара (в отзывах) */
+    .product-card {
+        width: 100%;
+    }
+
+    /* Подвал */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .footer__links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        text-align: left;
+    }
+}

@@ -18,7 +18,7 @@
 
 /* Контейнеры секций */
 .footer__contact,
-.footer__social,
+.footer-social,
 .footer__legal {
     flex: 1;
     min-width: 250px;
@@ -45,20 +45,20 @@
 }
 
 /* Социальные сети */
-.social__list {
+.footer-social__list {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 15px;
 }
 
-.social__list li a img {
+.footer-social__list li a img {
     width: 32px;
     height: 32px;
     transition: transform 0.3s;
 }
 
-.social__list li a img:hover {
+.footer-social__list li a img:hover {
     transform: scale(1.1);
 }
 
