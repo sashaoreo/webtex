@@ -64,8 +64,15 @@
         padding: 10px;
     }
 
+    .review__text {
+        flex-direction: column;
+        white-space: wrap;
+        padding: 10px;
+    }
+
     .review {
         width: 100%;
+        flex-direction: column;
     }
 
     /* Карточка товара (в отзывах) */
