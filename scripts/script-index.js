@@ -19,26 +19,34 @@ document.addEventListener("DOMContentLoaded", () => {
         *   Блок-схема: img/blocshema.png
         */
 
-    // 2. Получаем кнопку "Добавить в корзину"
-    const button = document.querySelector('.add__to__cart');
-    console.log(button);
-    if (!button) return; // Если кнопки нет, выходим
+ 
+
+    // Scroll up
+    const scrollUpButton = document.querySelector('.scroll-up');
+
+    if (!scrollUpButton) return; // Если кнопки нет, выходим
 
 
-    let isActive = false; // Состояние кнопки
+    const windowHeight = document.documentElement.clientHeight; // Высота видимой части окна
 
-    // 3. Навешиваем слушатель событий на клик
-    button.addEventListener('click', () => {
-        if (isActive) {
-            // 3.1.1.1 Кнопка уже нажата: возвращаем стандартный цвет и текст
-            button.style.backgroundColor = "blue";
-            button.textContent = "Добавить в корзину";
+    // Показать кнопку при прокрутке вниз на высоту экрана
+    document.addEventListener('scroll', () => {
+        let scrollPageY = window.scrollY; // Исправлено с this.scrollY
+
+        if (scrollPageY >= windowHeight) {
+        
+            scrollUpButton.classList.add('scroll-up--show');
         } else {
-            // 3.1.1.2 Кнопка не нажата: меняем цвет и текст
-            button.style.backgroundColor = "red";
-            button.textContent = "Ожидает в корзине";
+            scrollUpButton.classList.remove('scroll-up--show');
+       
         }
+    });
 
-        isActive = !isActive; // Инвертируем состояние кнопки
+    // Плавная прокрутка наверх при нажатии на кнопку
+    scrollUpButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 });
