@@ -1,0 +1,16 @@
+[
+    {
+        "link": "phone1.html",
+        "icon": "img/ip16pro.png",
+        "iconAlt": "Иконка телефона",
+        "title": "iPhone 16 Pro, 256 ГБ",
+        "buttom": "Купить"
+    },
+     {
+        "link": "phone1.html",
+        "icon": "img/ip15green.png",
+        "iconAlt": "Иконка телефона",
+        "title": "iPhone 15, 128 ГБ",
+        "buttom": "Купить"
+    }
+]

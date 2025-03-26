@@ -44,6 +44,7 @@
     background: #f5f5f5;
     padding: 10px;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .search__container input {
@@ -428,4 +429,23 @@ button:hover {
 .scroll-up--show {
     opacity: 1;
     visibility: visible;
+}
+
+.search__tag-list {
+    margin: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px 13px;
+    flex-wrap: wrap;
+
+    padding-left: 0;
+
+    list-style: none;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.search__tag-item--hidden {
+    display: none;
 }
