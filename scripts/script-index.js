@@ -216,5 +216,26 @@ if (preloader && content) {
          .catch(error => {
              console.error('Ошибка при загрузке данных:', error);
          });
+
+
+         // Карусель (слайдер)
+    const slider = document.querySelector('.swiper');
+
+    if (slider) {
+        const swiper = new Swiper(slider, {
+            // Дополнительные параметры
+            slidesPerView: 4, // Количество слайдов на экране
+            spaceBetween: 30, // Расстояние между слайдами
+            loop: true,  // Зацикливание слайдов
+
+            
+
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
  }
 });

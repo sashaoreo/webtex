@@ -1,0 +1,29 @@
+.swiper {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.swiper-slide {
+    box-shadow: none;
+    /* border: 1px solid #ebeaea; */
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #0019fd;
+}
+
+.swiper-pagination-bullet-active {
+    background: #019afd;
+}
+
+.swiper-button-prev {
+    left: 10;
+}
+
+.swiper-button-next {
+    right: 10;
+}
+
+.swiper a *, a {
+ text-decoration: none !important;
+}

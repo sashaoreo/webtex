@@ -449,3 +449,7 @@ button:hover {
 .search__tag-item--hidden {
     display: none;
 }
+
+.card__title{
+    text-decoration: none;
+}

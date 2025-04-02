@@ -14,3 +14,4 @@
 @import "adaptability.css";
 /* Подключение стилей отвечающих за насальную загрузку */
 @import "preloader.css";
+@import "slider.css";
